@@ -1,0 +1,40 @@
+actor calculator{
+  var cell: Int=0;
+
+  // Add
+  public func add(n: Int) : async Int {
+    cell += n;
+    cell 
+  };
+
+  // Subtract
+
+  public func subtract(n: Int): async Int {
+    cell -=n;
+    cell
+  };
+
+  // Multiply
+  public func multiply(n: Int): async Int {
+    cell *=n;
+    cell
+  };
+
+  //Divede
+  public func divede(n: Int): async ?Int {
+    if (n == 0){
+      null;
+    }else{
+      cell /=n;
+      ?cell
+    };
+  };
+
+  //Clear
+  public func clearall(): async() {
+    cell :=  0;
+  };
+
+};
+
+
